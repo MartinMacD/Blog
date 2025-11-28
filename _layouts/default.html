@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="site-header">
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+</header>
+
+
+ <div class="main-container">
+    
+  <aside class="sidebar left-sidebar">
+    <nav>
+      <ul>
+        {% assign sorted_categories = site.categories | sort %}
+        {% for category in sorted_categories %}
+          <li><strong>{{ category[0] | capitalize }}</strong></li>
+          <ul>
+            {% for post in category[1] %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+
+
+  <main class="content-box">
+    {{ content }}
+  </main>
+
+  <aside class="sidebar right-sidebar">
+    <nav>
+      <ul>
+        <li><strong>Links</strong></li>
+        <li><a href="https://github.com/MartinMacD">GitHub</a></li>
+        <li><a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></li>
+      </ul>
+    </nav>
+  </aside>
+</div>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  background-image: url('/assets/images/5026.png');
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.site-header {
+  width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.site-header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header h1 a:hover {
+  text-decoration: underline;
+}
+
+/* Layout container */
+.main-container {
+  display: flex;
+  justify-content: center;  
+  align-items: flex-start; 
+  gap: 2rem;              
+  width: 100%;
+  max-width: 1000px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Left Sidebar */
+.sidebar {
+  flex: 0 0 200px;       
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  height: auto;             
+}
+
+.sidebar strong:first-child {
+  margin-top: 0; 
+}
+
+/* Sidebar content */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav li {
+  margin-bottom: 0.4rem;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar nav a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+.sidebar strong {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Main content box */
+.content-box {
+  flex: 1 1 600px;           
+  background-color: #fff;
+  padding: 1rem 1rem 0.25rem 1rem;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  min-width: 700px;
+  margin-bottom: 2rem;     
+}
+
+.content-box h1 {
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;  
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sidebar, .content-box {
+    flex: 1 1 100%;
+    max-width: 600px;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .sidebar nav a {
+    font-size: 0.95rem;
+  }
+
+  .content-box {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Right sidebar */
+.right-sidebar {
+  flex: 0 0 200px;          
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* Adjust spacing for left and right sidebars */
+.left-sidebar {
+  order: 1;
+}
+
+.content-box {
+  order: 2;
+}
+
+.right-sidebar {
+  order: 3;
+}

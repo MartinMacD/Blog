@@ -8,4 +8,4 @@ categories: [projects]
 
 
 
-<img src="/assets/images/bml_sim_gridlock.gif" alt="Project 1">
+<img src="/assets/images/bml_sim_gridlock.gif" alt="BML sim at gridlock capacity">

@@ -39,6 +39,8 @@ In this traffic model, a single-track, circular motorway exists with cars that p
 The goal of this model is to observe how traffic jams and congestion patterns emerge based on traffic density and driver unpredictability.
 
 ### Examples
+Starting from the top, cars move right.
+
 X-Axis - Position on the road. Y-Axis - Time.
 <hr class="container-hr">
 Parameters: Length = 40, density = 0.3, max_velocity = 5, probability_of_slowdown = 0.3, steps = 40, seed = None.

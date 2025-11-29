@@ -16,4 +16,4 @@ I am currently an honours year student at Glasgow Caledonian University, studyin
 * Nagel-Schreckenberg traffic model implementation ([page](/projects/traffic-models/) \| [source](https://github.com/MartinMacD/Nagel-Schreckenberg-Traffic-Model))
 
 <br>
-This site has been created using [Jekyll](https://jekyllrb.com/) and Markdown.
+This site has been created using [Jekyll](https://jekyllrb.com/) and Markdown. Additionally, this site uses [GoatCounter](https://www.goatcounter.com/) to count page visits. No cookies or personal data is stored.

@@ -162,3 +162,17 @@ body {
   }
 }
 }
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container-hr {
+  border: none;
+  height: 2px;
+  background-color: #333;
+  width: 100%;
+  margin: 2rem 0;
+}
